@@ -67,3 +67,15 @@ To test the API endpoints, you can use ThunderClient, an HTTP client extension f
       - CRUD routes: `api/v1/buildings/`
 
 4. **Get Access Token**: To interact with protected endpoints, you need an access token. You can obtain it by making a request to the `/api/token/` endpoint with your superuser credentials.
+
+    - Example:
+      - Configure request:
+        - Set the HTTP method to POST.
+        - Set the URL to http://localhost:8000/api/token/
+        - Add the following JSON body (or replace with your credentials):
+          ```json
+          {
+            "username": "admin",
+            "password": "password"
+          }
+          ```
